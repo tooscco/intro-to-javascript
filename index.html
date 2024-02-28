@@ -14,6 +14,27 @@
     <button onclick="divide()">/</button>
     <button onclick="multiplication()">*</button>
 
+    <h1 class="text-center">Triangle</h1>
+    <input type="text" class="form-control my-2" placeholder="base" id="ba">
+    <input type="text" class="form-control my-2" placeholder="height" id="hei">
+    <button onclick="tri ()">calculate</button>
+    <h1 class="text-center mt-5">Circle</h1>
+    <input type="text" placeholder="radius" id="rad">
+    <button onclick="cir()">calculate</button>
+
+    <h1 class="text-center">BMI</h1>
+    <input type="text" class="form-control my-2" placeholder="weight" id="kg">
+    <input type="text" class="form-control my-2" placeholder="meter" id="meta">
+    <button onclick="bmi()">calculate</button>
+
+    <h5>Bulb on and off Project</h5>
+    <img src="image/light_off.png" id="Bulb" style="width: 60px;">
+    <!-- <img src="image/light on.jpeg" alt="" style="width: 200PX;" > -->
+    <div class="btn">
+        <button id="on" class="bulb-bulb" onclick="bulb(1)">Bulb off</button>
+        <button id="off" class="bulb-bulb" onclick="bulb(0)">Bulb on</button>
+    </div>
+
     <script>
         function divide (){
             alert(one.value/two.value)
@@ -27,6 +48,30 @@
         function subtraction(){
             alert(one.value-two.value)
         }
+        function tri(){
+            alert('The area of the triangel is' + .5*ba.value*hei.value + 'cm2')
+        }
+
+        function cri(){
+            alert((22/7)*rad.value*rad.value)
+        }
+
+        function bmi(){
+            alert(kg.value/(meta.value*meta.value))
+        }
+
+        function bulb(sw){
+            var pic;
+            if(sw==0)
+            {pic= "image/light_turn_on.jpeg"}
+            else {
+                pic= "image/light_off.png"
+            }
+            document.getElementById('Bulb').src=pic;
+        }
+        // function bulb_off(){
+        //     document.getElementById('Bulb').src="image/light_off.png";
+        // }
     </script>
 </body>
 </html>
