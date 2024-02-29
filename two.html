@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Ayooluwa">Ayooluwa is a very serious developer. But, she may have to eat before getting serious. In fact, she must.</div>
+    <button onclick="change()">check</button>
+
+    <div class="light" style="text-align: center; width: 700px; height: 150px;">
+     <h2>Assignment</h2>
+     <button onclick="bulbs()">Turn On</button>
+     <img src="image/bulb_off022.jpg" alt="" id="lig" style="width: 200px;">
+     <button onclick="bulb()">Turn off</button>
+    </div>
+
+    <script>
+        function change(){
+            console.log(Ayooluwa.innerHTML)
+            Ayooluwa.innerHTML = 'Everything don clear'
+            console.log(Ayooluwa.innerHTML)
+        }
+
+        function bulb() {
+            console.log(lig.src="image/bulb_off022.jpg")
+        }
+
+        function bulbs() {
+            console.log(lig.src="image/bulb_oon022.jpg")
+        }
+    </script>
+</body>
+</html>
